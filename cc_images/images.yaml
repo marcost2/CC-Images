@@ -48,6 +48,13 @@ CC-Ubuntu22.04-CUDA:
   provenance:
     variant: gpu
 
+CC-Rocky:
+  provenance:
+    distro: rocky
+    release: 9
+    variant: base
+
+
 CC-CentOS7:
   provenance:
     distro: centos
