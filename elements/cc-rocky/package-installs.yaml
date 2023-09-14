@@ -4,3 +4,4 @@ redhat-rpm-config:
 rpm-build:
 rpm-sign:
 iptables:
+cloud-init:

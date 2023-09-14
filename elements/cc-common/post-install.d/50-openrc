@@ -13,8 +13,8 @@ cat > /etc/auto_generate_openrc <<- 'EOM'
 OPENRC=$(cc-read-vendordata "openrc")
 
 if [ "${OPENRC}" != "null" ]; then
-  cc-read-vendordata "openrc" >  /home/cc/openrc
-  sed -i 's/^ *//g' /home/cc/openrc
+  cc-read-vendordata "openrc" >  $HOME/openrc
+  sed -i 's/^ *//g' $HOME/openrc
 fi
 
 EOM
