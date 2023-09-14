@@ -10,5 +10,9 @@ if [[ $(update-alternatives --display ip6tables) ]] 2>&1> /dev/null; then
   # https://github.com/husarnet/docker-example/issues/1
   update-alternatives --set ip6tables /usr/sbin/ip6tables-nft
 else
-  update-alternatives --install /usr/bin/ip6tables ip6tables /usr/sbin/ip6tables-nft 100
+#  update-alternatives --install /usr/bin/ip6tables ip6tables /usr/sbin/ip6tables-nft 100
+#  ln -s /usr/sbin/ip6tables-nft /sbin/ip6tables || exit 0
+  ls -lA /sbin/ip6tables*
+  ls -lA /usr/sbin/ip6tables
+  ls -lA /etc/alternatives/
 fi

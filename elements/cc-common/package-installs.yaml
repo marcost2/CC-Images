@@ -7,7 +7,6 @@ build-essential:
 bzip2:
 chrony:
 collectd:
-curl:
 diffstat:
 emacs:
 g++:
